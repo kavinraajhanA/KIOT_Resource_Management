@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="rm.labmaintainance"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout >
+                <Grid>
+                    <Image Source="LabMaintenance_Big" Aspect="AspectFill" VerticalOptions="FillAndExpand">
+
+                    </Image>
+                    <StackLayout Orientation="Horizontal" Margin="20" VerticalOptions="Start" BackgroundColor="Transparent">
+                        <ImageButton Source="Vector" Clicked="LMBack" WidthRequest="25" VerticalOptions="CenterAndExpand" BackgroundColor="Transparent"></ImageButton>
+                        <Label Text="Lab Maintenance" FontAttributes="Bold" FontSize="25" FontFamily="Montserrat" BackgroundColor="Transparent" HorizontalOptions="CenterAndExpand" TextColor="#012623" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center" >
+                        </Label>
+                    </StackLayout>
+
+                </Grid>
+
+
+
+
+
+
+                <Frame Padding="0" BorderColor="#012623" HeightRequest="48" WidthRequest="287" CornerRadius="15" BackgroundColor="#A8BFA4" Margin="20">
+                    <StackLayout Orientation="Horizontal" Margin="10,0,10,0" >
+                        <Image Source="Lab1" HeightRequest="25"  HorizontalOptions="Start"  VerticalOptions="CenterAndExpand"></Image>
+
+                        <Entry Placeholder="Lab No" PlaceholderColor="#012623" HorizontalOptions="Start" ></Entry>
+                    </StackLayout>
+
+
+
+                </Frame>
+                <Frame Padding="0" BorderColor="#012623" HeightRequest="48" WidthRequest="287" CornerRadius="15" BackgroundColor="#A8BFA4" Margin="20">
+                    <StackLayout Orientation="Horizontal" Margin="10,0,10,0" >
+                        <Image Source="system1" HeightRequest="25"  HorizontalOptions="Start"  VerticalOptions="CenterAndExpand"></Image>
+
+                        <Entry Placeholder="Equipment/System No" PlaceholderColor="#012623" HorizontalOptions="Start" ></Entry>
+                    </StackLayout>
+
+
+
+                </Frame> <Frame Padding="0"  HeightRequest="48" WidthRequest="287" CornerRadius="15" BackgroundColor="#A8BFA4" Margin="20">
+                    <StackLayout Orientation="Horizontal" Margin="10,0,10,0" >
+                        
+                        <Entry Placeholder="Issues" PlaceholderColor="#012623" HorizontalOptions="Start" ></Entry>
+                    </StackLayout>
+
+
+
+                </Frame>
+
+                <Frame Padding="0" BorderColor="#012623" HeightRequest="108" WidthRequest="287" CornerRadius="15" BackgroundColor="#A8BFA4" Margin="20">
+                    <StackLayout Orientation="Vertical" Margin="10" >
+                        <StackLayout Orientation="Horizontal">
+                            <Image Source="comment1" HeightRequest="25"  HorizontalOptions="Start"  VerticalOptions="CenterAndExpand"></Image>
+                            <Label Text="Query Box" FontSize="Medium" TextColor="#012623" FontFamily="Montserrat"></Label>
+
+                        </StackLayout>
+                        <Entry Placeholder="Type your Queries"  PlaceholderColor="#012623" HorizontalOptions="Start" ></Entry>
+                    </StackLayout>
+
+
+
+                </Frame>
+                <Button Text="Submit"  TextTransform="None" Clicked="LMSubmit" TextColor="White" Margin="90,20,90,20" HeightRequest="50" WidthRequest="136" CornerRadius="15" BackgroundColor="#3A7338" FontAttributes="Bold"  FontSize="18">
+
+                </Button>
+
+
+
+
+            </StackLayout>
+
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

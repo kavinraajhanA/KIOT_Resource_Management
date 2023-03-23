@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="rm.login"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Image Source="clgpic"></Image>
+                <Label Margin="0,00,0,0" Text="Welcome" FontAttributes="Bold" FontSize="24" FontFamily="Montserrat" TextColor="#3A7338" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center"></Label>
+
+
+
+                
+                    <Frame BackgroundColor="#D3DED1" BorderColor="#012623" Padding="0" CornerRadius="11" Margin="40,20,40,10" >
+                        <StackLayout Orientation="Horizontal">
+                            <Image Source="User"  HeightRequest="20" WidthRequest="20" Margin="20,0,0,0"></Image>
+                            <StackLayout>
+
+                                <Entry Placeholder="username"  PlaceholderColor="#012623"   FontSize="Medium"></Entry>
+
+
+                            </StackLayout>
+                        </StackLayout>
+                    </Frame>
+
+
+
+
+
+                <Frame BackgroundColor="#D3DED1" BorderColor="#012623" Padding="0" CornerRadius="11" Margin="40,20,40,10" >
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="password1"  HeightRequest="20" WidthRequest="20" Margin="20,0,0,0"></Image>
+                        <StackLayout>
+
+                            <Entry Placeholder="Password"  PlaceholderColor="#012623"   FontSize="Medium"></Entry>
+
+
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+                <StackLayout Margin="30,0,20,0" Orientation="Horizontal">
+                    <Button Text="Create an Account" Clicked="SignIn"  HorizontalOptions="Start" BackgroundColor="Transparent" TextColor="#012623" TextTransform="None" FontFamily="Montserrat" FontSize="16"></Button>
+                    <Button Text="Forget Password?" Clicked="forpw"  HorizontalOptions="EndAndExpand" BackgroundColor="Transparent" TextColor="#012623" TextTransform="None" FontFamily="Montserrat" FontSize="16"></Button>
+                </StackLayout>
+                
+                <Button Text="Log In" Margin="120,0,120,0" TextTransform="None" CornerRadius="10" Clicked="Login" TextColor="White" FontAttributes="Bold" FontFamily="Montserrat" FontSize="19" BackgroundColor="#3A7338"></Button>
+
+            </StackLayout>
+        </ScrollView>
+       
+    </ContentPage.Content>
+</ContentPage>

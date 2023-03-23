@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="rm.seminarhall"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="#D3DED1">
+                <Grid>
+
+                    <StackLayout Orientation="Horizontal" Margin="20" VerticalOptions="Start" BackgroundColor="Transparent">
+                        <ImageButton Source="Vector" Clicked="SeminarHallBack" WidthRequest="25" VerticalOptions="CenterAndExpand" BackgroundColor="Transparent"></ImageButton>
+                        <Label Text="Seminar Hall" FontAttributes="Bold" FontSize="25" Margin="0,0,30,0" FontFamily="Montserrat" BackgroundColor="Transparent" HorizontalOptions="CenterAndExpand" TextColor="#012623" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center" >
+                        </Label>
+                    </StackLayout>
+                </Grid>
+
+                <StackLayout Margin="0,50,0,0">
+                    <Frame Padding="0" BorderColor="#012623" HeightRequest="48" WidthRequest="287" CornerRadius="15" BackgroundColor="White" Margin="20">
+                        <StackLayout Orientation="Horizontal">
+
+                            <Picker  SelectedItem="{Binding TravelBy}" Title="Select Department" TitleColor="#012623" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" CharacterSpacing="1.2" FontSize="18" FontFamily="Montserrat" HeightRequest="40" >
+                                <Picker.Items >
+                                    <x:String>CSE</x:String>
+                                    <x:String>IT</x:String>
+                                    <x:String>CSBS</x:String>
+                                    <x:String>AIDS</x:String>
+                                    <x:String>EEE</x:String>
+                                    <x:String>ECE</x:String>
+                                    <x:String>CIVIL</x:String>
+                                    <x:String>MECH</x:String>
+
+                                </Picker.Items>
+                            </Picker>
+                            <ImageButton Source="dropbox" BackgroundColor="Transparent" HeightRequest="10" Margin="10,0,20,0"></ImageButton>
+                        </StackLayout>
+
+
+
+                    </Frame>
+                    <Label Text="Book hall" TextColor="Black" FontSize="18" FontFamily="Montserrat" Margin="20,0,0,0"></Label>
+
+                    <Frame Padding="0" BorderColor="#012623"  HeightRequest="48" WidthRequest="287" CornerRadius="15" BackgroundColor="White" Margin="20,0,20,0">
+                        <StackLayout Orientation="Horizontal" Margin="10,0,10,0" >
+                            <Image Source="Date1" HeightRequest="25"  HorizontalOptions="Start"  VerticalOptions="CenterAndExpand"></Image>
+                            <Entry Placeholder="Enter Date" PlaceholderColor="#012623" HorizontalOptions="StartAndExpand" ></Entry>
+                        </StackLayout>
+                    </Frame>
+                    <Label Text="From" TextColor="Black" FontSize="18" FontFamily="Montserrat" Margin="20,0,0,0"></Label>
+                    <Frame Padding="0" BorderColor="#012623" HeightRequest="48" WidthRequest="287" CornerRadius="15" BackgroundColor="White" Margin="20,0,20,0">
+                        <StackLayout Orientation="Horizontal" Margin="10,0,10,0" >
+                            <Image Source="time" HeightRequest="25"  HorizontalOptions="Start"  VerticalOptions="CenterAndExpand"></Image>
+                            <Entry Placeholder="Enter Timing" PlaceholderColor="#012623" HorizontalOptions="StartAndExpand" ></Entry>
+                        </StackLayout>
+                    </Frame>
+                    <Label Text="Till" TextColor="Black" FontSize="18" FontFamily="Montserrat" Margin="20,0,0,0"></Label>
+                    <Frame Padding="0" BorderColor="#012623"  HeightRequest="48" WidthRequest="287" CornerRadius="15" BackgroundColor="White" Margin="20,0,20,0">
+                        <StackLayout Orientation="Horizontal" Margin="10,0,10,0" >
+                            <Image Source="time" HeightRequest="25"  HorizontalOptions="Start"  VerticalOptions="CenterAndExpand"></Image>
+                            <Entry Placeholder="Enter Timing" PlaceholderColor="#012623" HorizontalOptions="StartAndExpand" ></Entry>
+                        </StackLayout>
+                    </Frame>
+                    <Label Text="Purpose" TextColor="Black" FontSize="18" FontFamily="Montserrat" Margin="20,0,0,0"></Label>
+                    <Frame Padding="0" BorderColor="#012623" HeightRequest="48" WidthRequest="287" CornerRadius="15" BackgroundColor="White" Margin="20,0,20,0">
+                        <StackLayout Orientation="Horizontal" Margin="10,0,10,0" >
+                            <Image Source="comment1" HeightRequest="25"  HorizontalOptions="Start"  VerticalOptions="CenterAndExpand"></Image>
+                            <Entry Placeholder="Write few lines" PlaceholderColor="#012623" HorizontalOptions="StartAndExpand" ></Entry>
+                        </StackLayout>
+                    </Frame>
+
+                </StackLayout>
+
+
+                <Button Text="Book" TextTransform="None" Clicked="hallbook" TextColor="White" Margin="100,50,100,20" HeightRequest="50" WidthRequest="136" CornerRadius="15" BackgroundColor="#3A7338" FontAttributes="Bold"  FontSize="18">
+
+                </Button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

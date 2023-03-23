@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="rm.usermain">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#D3DED1">
+            <StackLayout Orientation="Horizontal">
+                <StackLayout >
+                    <Image Source="profile" Margin="30" HeightRequest="80" HorizontalOptions="Start" ></Image>
+
+                </StackLayout>
+                <StackLayout Orientation="Vertical"  Margin="0,35,5,0">
+                    <Label Text="Name" FontSize="20" FontAttributes="Bold"  FontFamily="Montserrat"   TextColor="Black"></Label>
+                    <Label Text="Department" FontSize="14"  FontFamily="Montserrat"   TextColor="Black"></Label>
+                </StackLayout>
+                <StackLayout Margin="130,50,0,0" >
+                    <ImageButton Source="Notifications"   BackgroundColor="Transparent" HeightRequest="30" ></ImageButton>
+                </StackLayout>
+            </StackLayout>
+            <ScrollView>
+                <StackLayout >
+
+                    <ImageButton Source="Booking" Clicked="booking" Margin="0,20,0,0"  BackgroundColor="Transparent" HeightRequest="120" ></ImageButton>
+                    <ImageButton Source="Maintenance"  Clicked="maintain" Margin="0,40,0,0"  BackgroundColor="Transparent" HeightRequest="120"></ImageButton>
+                    <ImageButton Source="Status" Clicked="status" Margin="0,40,0,0"  BackgroundColor="Transparent" HeightRequest="120"></ImageButton>
+                   
+                </StackLayout>
+            </ScrollView>
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="rm.FacultyProfile">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="0,0,0,0">
+                <StackLayout>
+                    <ImageButton Source="Vector" HeightRequest="20" WidthRequest="20" Margin="0,30,360,0" BackgroundColor="Transparent"></ImageButton>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <ImageButton Source="profile" HeightRequest="70" WidthRequest="70" Margin="60,0,0,0" BackgroundColor="Transparent"></ImageButton>
+
+                    <StackLayout Orientation="Vertical" Margin="0,5,0,0">
+                        <Label  Text="Name" FontSize="20" FontAttributes="Bold" TextColor="#000000" FontFamily="Montserrat" HorizontalOptions="CenterAndExpand" Margin="0,0,10,5" ></Label>
+                        <Label  Text="Department" FontSize="16" FontAttributes="None" TextColor="#000000" FontFamily="Montserrat" HorizontalOptions="CenterAndExpand" Margin="20,0,10,0" ></Label>
+
+                    </StackLayout>
+                </StackLayout>
+                <Label Text="ID NO" TextColor="#000000" Margin="40,20,0,-10" FontAttributes="Bold" FontSize="14"></Label>
+                <Frame BackgroundColor="#D3DED1" BorderColor="#012623" Padding="0" CornerRadius="11" Margin="40,10,40,10" >
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="idcard1"  HeightRequest="20" WidthRequest="20" Margin="20,0,0,0"></Image>
+                        <StackLayout>
+
+                            <Entry Placeholder="xxxxx" PlaceholderColor="#012623" x:Name="nameEntry"  FontSize="16"></Entry>
+
+
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+                <Label Text="Email" TextColor="#000000" Margin="40,0,0,-10" FontAttributes="Bold" FontSize="14"></Label>
+
+                <Frame BackgroundColor="#D3DED1" BorderColor="#012623" Padding="0" CornerRadius="11" Margin="40,10,40,10">
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="Mail"  HeightRequest="20" WidthRequest="20" Margin="20,0,0,0"></Image>
+                        <StackLayout>
+
+                            <Entry Placeholder="xxxxxx" PlaceholderColor="#223A66" x:Name="emailEntry" FontSize="16"></Entry>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+                <Label Text="Number" TextColor="#000000" Margin="40,0,0,-10" FontAttributes="Bold" FontSize="14"></Label>
+                <Frame BackgroundColor="#D3DED1" BorderColor="#012623" Padding="0" CornerRadius="11" Margin="40,10,40,10">
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="Call"  HeightRequest="20" WidthRequest="20" Margin="20,0,0,0"></Image>
+                        <StackLayout>
+
+                            <Entry Placeholder="xxxxxxx" PlaceholderColor="#223A66" x:Name="mobileEntry" FontSize="16"></Entry>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+
+
+                <StackLayout>
+                    <Label Text="Staff ID Picture" TextColor="#012623" FontSize="18" FontFamily="Montserrat" FontAttributes="Bold" Margin="40,10,0,0"></Label>
+                    <ImageButton Source="id" HeightRequest="187" WidthRequest="119" Margin="0,10,0,0" BackgroundColor="Transparent"></ImageButton>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Button Text="Cancel" BackgroundColor="#FFFFFF" TextColor="#3A7338" CornerRadius="10" Margin="80,50,0,0" HorizontalOptions="StartAndExpand" HeightRequest="40" WidthRequest="104" BorderColor="#3A7338" BorderWidth="2"></Button>
+                    <Button Text="Accept" BackgroundColor="#3A7338" TextColor="White" CornerRadius="10" Margin="0,50,80,0" HorizontalOptions="EndAndExpand" HeightRequest="40" WidthRequest="104"></Button>
+                </StackLayout>
+            </StackLayout>
+
+
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="rm.profile" NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#D3DED1">
+            <StackLayout Orientation="Horizontal">
+                <ImageButton  Source="Vector" Clicked="proback"  WidthRequest="25" VerticalOptions="Center" Margin="20,20,0,0" BackgroundColor="Transparent"></ImageButton>
+                <Label Text="Profile" TextColor="#012623" FontAttributes="Bold"  FontSize="26" HorizontalOptions="CenterAndExpand" FontFamily="Montserrat" Margin="0,20,50,0"/>
+            </StackLayout>
+            <ScrollView>
+                <StackLayout>
+                    <Image Source="profile" Margin="10" HeightRequest="80" ></Image>
+
+
+
+
+                    <!--name-->
+                    <Frame CornerRadius="15" Padding="15" BorderColor="#012623" BackgroundColor="#F1F1F1" Margin="20,10,20,0" WidthRequest="311" HeightRequest="40">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="Name_Clicked"></TapGestureRecognizer>
+                        </Frame.GestureRecognizers>
+                        <StackLayout Orientation="Horizontal" >
+                            <Image Source="user" HorizontalOptions="Start" HeightRequest="30"></Image>
+                            <StackLayout Orientation="Vertical" HorizontalOptions="Start" Margin="20,0,0,0">
+                                <Label Text="Name" TextColor="#012623" FontSize="16" HorizontalOptions="StartAndExpand" FontFamily="Montserrat"></Label>
+                                <Label Text="xxxxxxxxxx"></Label>
+                                <Entry></Entry>
+                            </StackLayout>
+                            <Button Text="Change" FontFamily="Montserrat" TextTransform="None" FontSize="14" TextColor="DimGray" BackgroundColor="Transparent" HorizontalOptions="EndAndExpand"   IsVisible="true"></Button>
+                            <Image Source="tick"  HorizontalOptions="EndAndExpand" HeightRequest="30" IsVisible="false"></Image>
+                        </StackLayout>
+                    </Frame>
+
+                    <!--department-->
+                    <Frame CornerRadius="15" Padding="15" BorderColor="#012623" BackgroundColor="#F1F1F1" Margin="20,10,20,0" WidthRequest="311" HeightRequest="40">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="Department_Clicked"></TapGestureRecognizer>
+                        </Frame.GestureRecognizers>
+                        <StackLayout Orientation="Horizontal"  >
+                            <Image Source="dep1" HorizontalOptions="Start" HeightRequest="30"></Image>
+                            <StackLayout Orientation="Vertical" HorizontalOptions="Start" Margin="20,0,0,0">
+                                <Label Text="Department" TextColor="#012623" FontSize="16" HorizontalOptions="StartAndExpand" FontFamily="Montserrat"></Label>
+                                <Label Text="xxxxxxxxxx"></Label>
+                                <Entry></Entry>
+                            </StackLayout>
+                            <Button Text="Change" FontFamily="Montserrat" TextTransform="None" FontSize="14" TextColor="DimGray" BackgroundColor="Transparent" HorizontalOptions="EndAndExpand"   IsVisible="true"></Button>
+                            <Image Source="tick"  HorizontalOptions="EndAndExpand" HeightRequest="30" IsVisible="false"></Image>
+                        </StackLayout>
+                    </Frame>
+
+                    <!--Email-->
+                    <Frame CornerRadius="15" Padding="15" BorderColor="#012623" BackgroundColor="#F1F1F1" Margin="20,10,20,0" WidthRequest="311" HeightRequest="40">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="Email_Clicked"></TapGestureRecognizer>
+                        </Frame.GestureRecognizers>
+                        <StackLayout Orientation="Horizontal"  >
+                            <Image Source="Mail1" HorizontalOptions="Start" HeightRequest="30"></Image>
+                            <StackLayout Orientation="Vertical" HorizontalOptions="Start" Margin="20,0,0,0">
+                                <Label Text="Email" TextColor="#012623" FontSize="16" HorizontalOptions="StartAndExpand" FontFamily="Montserrat"></Label>
+                                <Label Text="xxxxxxxxxx"></Label>
+                                <Entry></Entry>
+                            </StackLayout>
+                            <Button Text="Change" FontFamily="Montserrat" TextTransform="None" FontSize="14" TextColor="DimGray" BackgroundColor="Transparent" HorizontalOptions="EndAndExpand"   IsVisible="true"></Button>
+                            <Image Source="tick"  HorizontalOptions="EndAndExpand" HeightRequest="30" IsVisible="false"></Image>
+
+                        </StackLayout>
+                    </Frame>
+
+                    <!--number-->
+                    <Frame CornerRadius="15" Padding="15" BorderColor="#012623" BackgroundColor="#F1F1F1" Margin="20,10,20,0" WidthRequest="311" HeightRequest="40">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="number_Clicked"></TapGestureRecognizer>
+                        </Frame.GestureRecognizers>
+                        <StackLayout Orientation="Horizontal"  >
+                            <Image Source="call1" HorizontalOptions="Start" HeightRequest="30"></Image>
+                            <StackLayout Orientation="Vertical" HorizontalOptions="Start" Margin="20,0,0,0">
+                                <Label Text="Number" TextColor="#012623" FontSize="16" HorizontalOptions="StartAndExpand" FontFamily="Montserrat"></Label>
+                                <Label Text="xxxxxxxxxx"></Label>
+                                <Entry></Entry>
+                            </StackLayout>
+                            <Button Text="Change" FontFamily="Montserrat" TextTransform="None" FontSize="14" TextColor="DimGray" BackgroundColor="Transparent" HorizontalOptions="EndAndExpand"   IsVisible="true"></Button>
+                            <Image Source="tick"  HorizontalOptions="EndAndExpand" HeightRequest="30" IsVisible="false"></Image>
+
+                        </StackLayout>
+                    </Frame>
+
+                    <!--Password-->
+                    <Frame CornerRadius="15" Padding="15" BorderColor="#012623" BackgroundColor="#F1F1F1" Margin="20,10,20,0" WidthRequest="311" HeightRequest="40">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="Password"></TapGestureRecognizer>
+                        </Frame.GestureRecognizers>
+                        <StackLayout Orientation="Horizontal"  >
+                            <Image Source="password1" HorizontalOptions="Start" HeightRequest="30"></Image>
+                            <StackLayout Orientation="Vertical" HorizontalOptions="Start" Margin="20,0,0,0">
+                                <Label Text="Password" TextColor="#012623" FontSize="16" HorizontalOptions="StartAndExpand" FontFamily="Montserrat"></Label>
+                                <Label Text="xxxxxxxxxx"></Label>
+                                <Entry></Entry>
+                            </StackLayout>
+                            <Button Text="Change"  FontFamily="Montserrat" TextTransform="None" FontSize="14" TextColor="DimGray" BackgroundColor="Transparent" HorizontalOptions="EndAndExpand"   IsVisible="true"></Button>
+                            <Image Source="tick"  HorizontalOptions="EndAndExpand" HeightRequest="30" IsVisible="false"></Image>
+                        </StackLayout>
+                    </Frame>
+                    <!--Logout-->
+                    <Frame CornerRadius="15" Padding="15" BorderColor="#012623" BackgroundColor="#F1F1F1" Margin="20,10,20,10" WidthRequest="311" HeightRequest="40">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="LogOut"></TapGestureRecognizer>
+                        </Frame.GestureRecognizers>
+                        <StackLayout Orientation="Horizontal"  >
+                            <Image Source="exit1" HorizontalOptions="Start" HeightRequest="30"></Image>
+                            <StackLayout Orientation="Vertical" HorizontalOptions="Start" Margin="20,0,0,0">
+                                <Label Text="Logout"    TextColor="#012623" FontSize="16" HorizontalOptions="StartAndExpand" FontFamily="Montserrat" VerticalOptions="CenterAndExpand"></Label>
+                            </StackLayout>
+                
+                        </StackLayout>
+                    </Frame>
+
+
+
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

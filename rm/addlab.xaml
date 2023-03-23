@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="rm.addlab" NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+
+                <StackLayout Orientation="Horizontal" Margin="20,20,20,0" VerticalOptions="StartAndExpand"  BackgroundColor="Transparent">
+                    <ImageButton Source="Vector" Clicked="backadminpro" WidthRequest="25" VerticalOptions="CenterAndExpand" BackgroundColor="Transparent"></ImageButton>
+                    <Label Text="Add Labs" FontAttributes="Bold" FontSize="25" Margin="0,0,30,0" FontFamily="Montserrat" BackgroundColor="Transparent" HorizontalOptions="CenterAndExpand" TextColor="#012623" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center" >
+                    </Label>
+                </StackLayout>
+            </Grid>
+
+            <StackLayout Margin="0,30,0,0">
+                <Frame Padding="0"  BorderColor="#012623" HeightRequest="48" WidthRequest="287" CornerRadius="15" BackgroundColor="#D3DED1" Margin="20">
+                    <StackLayout Orientation="Horizontal" Margin="10,0,10,0" >
+
+
+                        <Entry Placeholder="Lab No" PlaceholderColor="#012623" HorizontalOptions="StartAndExpand" ></Entry>
+                    </StackLayout>
+
+
+
+                </Frame>
+                <Frame Padding="0" BorderColor="#012623"  HeightRequest="48" WidthRequest="287" CornerRadius="15" BackgroundColor="#D3DED1" Margin="20">
+                    <StackLayout Orientation="Horizontal" Margin="10,0,10,0" >
+
+
+                        <Entry Placeholder="Equipment No" PlaceholderColor="#012623" HorizontalOptions="Start" ></Entry>
+                    </StackLayout>
+                </Frame>
+                <Frame Padding="0" BorderColor="#012623" HeightRequest="48" WidthRequest="287" CornerRadius="15" BackgroundColor="#D3DED1" Margin="20">
+                    <StackLayout Orientation="Horizontal" Margin="10,0,10,0" >
+
+
+                        <Entry Placeholder="Staff Incharge" PlaceholderColor="#012623" HorizontalOptions="StartAndExpand" ></Entry>
+                    </StackLayout>
+
+
+
+                </Frame>
+                <Frame Padding="0" BorderColor="#012623"  HeightRequest="48" WidthRequest="287" CornerRadius="15" BackgroundColor="#D3DED1" Margin="20">
+                    <StackLayout Orientation="Horizontal" Margin="10,0,10,0" >
+
+
+                        <Entry Placeholder="Floor No" PlaceholderColor="#012623" HorizontalOptions="Start" ></Entry>
+                    </StackLayout>
+                </Frame>
+
+            </StackLayout>
+
+
+            <Button Text="Submit" Clicked="viewlabs" TextTransform="None" TextColor="White" Margin="90,50,90,20" HeightRequest="50" WidthRequest="136" CornerRadius="15" BackgroundColor="#3A7338" FontAttributes="Bold"  FontSize="18">
+
+            </Button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

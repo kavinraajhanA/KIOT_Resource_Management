@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="rm.staffreq" NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <ImageButton Source="vector" Clicked="backtoadmin" BackgroundColor="Transparent" Margin="30"  HeightRequest="25" ></ImageButton>
+                <Label Text="Staff Request" TextColor="Black" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" Margin="0,30,70,0" FontFamily="Montserrat"  HorizontalOptions="CenterAndExpand"></Label>
+            </StackLayout>
+            <StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <StackLayout Orientation="Horizontal">
+                        <StackLayout >
+                            <Image Source="profile" Margin="30" HeightRequest="80" HorizontalOptions="Start" ></Image>
+
+                        </StackLayout>
+                        <StackLayout Orientation="Vertical"  Margin="0,35,5,0">
+                            <Label Text="Name" FontSize="20" FontAttributes="Bold"  FontFamily="Montserrat"   TextColor="Black"></Label>
+                            <Label Text="Staff id" FontSize="14"  FontFamily="Montserrat"   TextColor="Gray"></Label>
+                            <Label Text="CSE" FontSize="14"  FontFamily="Montserrat"   TextColor="Gray"></Label>
+                        </StackLayout>
+                        <StackLayout Margin="60,50,0,0">
+                            <Button Text="Accept" BackgroundColor="#3A7338" TextColor="White" TextTransform="None" FontFamily="Montserrat" FontSize="15" HeightRequest="40" ></Button>
+                        </StackLayout>
+
+
+
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout BackgroundColor="#D3DED1" HeightRequest="3" Margin="20,0,20,0"></StackLayout>
+            </StackLayout>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

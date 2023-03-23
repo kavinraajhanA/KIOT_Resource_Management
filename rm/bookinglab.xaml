@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="rm.bookinglab"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="#D3DED1">
+                <StackLayout Orientation="Horizontal">
+                    <ImageButton Source="Vector" Clicked="LabBack" BackgroundColor="Transparent" Margin="30"  HeightRequest="25" ></ImageButton>
+                    <Label Text="Booking Lab" TextColor="Black" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" Margin="0,30,70,0" FontFamily="Montserrat"  HorizontalOptions="CenterAndExpand"></Label>
+                </StackLayout>
+                <Image Source="Success_Big" ></Image>
+
+                <Frame Margin="30,60,30,60" CornerRadius="15" BorderColor="#012623">
+                    <StackLayout>
+                        <StackLayout>
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="bookhall" HorizontalOptions="Start" HeightRequest="70" ></Image>
+                                <StackLayout Orientation="Vertical">
+                                    <Label Text="CC01" Margin="10" TextColor="Black" FontSize="16" FontFamily="Montserrat" FontAttributes="Bold"></Label>
+                                    <Label Text="Occupies upto 30 seats" Margin="10,0,0,10" TextColor="Gray" FontSize="15"  ></Label>
+                                </StackLayout>
+                            </StackLayout>
+                            <Label Text=" - - -  - - -  - - -  - - -  - - -  - - -  - - - " Padding="5" HorizontalOptions="Center" TextColor="Gray" FontSize="Large"></Label>
+
+                        </StackLayout>
+                        <StackLayout>
+                            <Label Text="Department" TextColor="Black" FontSize="18"   FontAttributes="bold" FontFamily="Montserrat" HorizontalTextAlignment="start"></Label>
+                            <Label Text="Cse" TextColor="Gray" FontSize="14"    FontFamily="Montserrat" HorizontalTextAlignment="start"></Label>
+                            <Label Text="Date" TextColor="Black" FontSize="18"   FontAttributes="bold" FontFamily="Montserrat" HorizontalTextAlignment="start"></Label>
+                            <Label Text="01/02/2023" TextColor="Gray" FontSize="14"    FontFamily="Montserrat" HorizontalTextAlignment="start"></Label>
+                            <StackLayout Orientation="Horizontal">
+                                <StackLayout>
+                                    <Label Text="From" TextColor="Black" FontSize="18"   FontAttributes="bold" FontFamily="Montserrat" HorizontalTextAlignment="start"></Label>
+                                    <Label Text="2.00pm" TextColor="Gray" FontSize="14"    FontFamily="Montserrat" HorizontalTextAlignment="start"></Label>
+                                </StackLayout>
+
+                                <StackLayout HorizontalOptions="EndAndExpand">
+                                    <Label Text="Till" TextColor="Black" FontSize="18"   FontAttributes="bold" FontFamily="Montserrat" ></Label>
+                                    <Label Text="4.00pm" TextColor="Gray"  FontSize="14"    FontFamily="Montserrat" ></Label>
+                                </StackLayout>
+
+                            </StackLayout>
+
+
+                        </StackLayout>
+                    </StackLayout>
+
+
+                </Frame>
+                <Button Text="cancel" Clicked="labCancel" BackgroundColor="#3A7338" TextColor="White" CornerRadius="10" Margin="125,5,125,0" FontSize="16" FontAttributes="Bold" FontFamily="Montserrat"></Button>
+
+            </StackLayout>
+        </ScrollView>
+        
+                
+    </ContentPage.Content>
+</ContentPage>

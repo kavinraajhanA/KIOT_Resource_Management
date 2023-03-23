@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="rm.classroomquery"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout >
+                <Grid>
+                    <Image Source="Classroom_Big" Aspect="AspectFill" VerticalOptions="FillAndExpand">
+
+                    </Image>
+                    <StackLayout Orientation="Horizontal" Margin="20" VerticalOptions="Start" BackgroundColor="Transparent">
+                        <ImageButton Source="Vector" Clicked="CQBack" WidthRequest="25" VerticalOptions="CenterAndExpand" BackgroundColor="Transparent"></ImageButton>
+                        <Label Text="Classroom Query" FontAttributes="Bold" FontSize="25" FontFamily="Montserrat" BackgroundColor="Transparent" HorizontalOptions="CenterAndExpand" TextColor="#012623" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center" >
+                        </Label>
+                    </StackLayout>
+
+                </Grid>
+
+
+
+
+
+
+                <Frame Padding="0" BorderColor="#012623" HeightRequest="48" WidthRequest="287" CornerRadius="15" BackgroundColor="#A8BFA4" Margin="20">
+                    <StackLayout Orientation="Horizontal">
+
+                        <Picker  SelectedItem="{Binding TravelBy}" Title="Block" TitleColor="#012623" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" CharacterSpacing="1.2" FontSize="18" FontFamily="Montserrat" HeightRequest="40" FontAttributes="Bold">
+                            <Picker.Items >
+                                <x:String>A</x:String>
+                                <x:String>B</x:String>
+                                <x:String>C</x:String>
+                                <x:String>D</x:String>
+                                
+                            </Picker.Items>
+                        </Picker>
+                        <ImageButton Source="dropbox" BackgroundColor="Transparent" HeightRequest="10" Margin="10,0,20,0"></ImageButton>
+                    </StackLayout>
+
+
+
+                </Frame>
+                <Frame Padding="0" BorderColor="#012623"  HeightRequest="48" WidthRequest="287" CornerRadius="15" BackgroundColor="#A8BFA4" Margin="20">
+                    <StackLayout Orientation="Horizontal" Margin="10,0,10,0" >
+                        <Image Source="Classroom1" HeightRequest="25"  HorizontalOptions="Start"  VerticalOptions="CenterAndExpand"></Image>
+
+                        <Entry Placeholder="Classroom No" PlaceholderColor="#012623" HorizontalOptions="Start" ></Entry>
+                    </StackLayout>
+
+
+
+
+                </Frame>
+                <StackLayout HeightRequest="350" Spacing="0">
+                    <TableView Intent="Settings" Margin="10">
+                        <TableRoot>
+                            <TableSection >
+                                <ViewCell>
+                                    <StackLayout Orientation="Horizontal">
+                                        <!--<Frame CornerRadius="100" HorizontalOptions="Center" VerticalOptions="Center" BorderColor="#C17FFB" BackgroundColor="Transparent">
+                                               
+                                            </Frame>-->
+
+                                        <Image Source="light1"  ></Image>
+                                        <Label  Text="Light" TextColor="#223A66" VerticalTextAlignment="Center"></Label>
+                                        <CheckBox  HorizontalOptions="EndAndExpand" x:Name="CCTV"></CheckBox>
+
+                                    </StackLayout>
+
+
+                                </ViewCell>
+                            </TableSection>
+
+                            <TableSection >
+                                <ViewCell>
+                                    <StackLayout Orientation="Horizontal">
+                                        <!--<Frame CornerRadius="100" HorizontalOptions="Center" VerticalOptions="Center" BorderColor="#C17FFB" BackgroundColor="Transparent">
+                                               
+                                            </Frame>-->
+                                        <Image Source="fan1"  ></Image>
+                                        <Label  Text="Fan" TextColor="#223A66" VerticalTextAlignment="Center"></Label>
+                                        <CheckBox x:Name="security" HorizontalOptions="EndAndExpand"></CheckBox>
+
+                                    </StackLayout>
+
+
+                                </ViewCell>
+                            </TableSection>
+
+                            <TableSection >
+                                <ViewCell>
+                                    <StackLayout Orientation="Horizontal">
+                                        <!--<Frame CornerRadius="100" HorizontalOptions="Center" VerticalOptions="Center" BorderColor="#C17FFB" BackgroundColor="Transparent">
+                                               
+                                            </Frame>-->
+                                        <Image Source="projector1"  ></Image>
+                                        <Label  Text="Projector" TextColor="#223A66" VerticalTextAlignment="Center"></Label>
+                                        <CheckBox  x:Name="Alarm"  HorizontalOptions="EndAndExpand"></CheckBox>
+
+                                    </StackLayout>
+
+
+                                </ViewCell>
+                            </TableSection>
+
+                            <TableSection >
+                                <ViewCell>
+                                    <StackLayout Orientation="Horizontal">
+                                        <!--<Frame CornerRadius="100" HorizontalOptions="Center" VerticalOptions="Center" BorderColor="#C17FFB" BackgroundColor="Transparent">
+                                               
+                                            </Frame>-->
+                                        <Image Source="table"  ></Image>
+                                        <Label  Text="Table" TextColor="#223A66" VerticalTextAlignment="Center"></Label>
+                                        <CheckBox  x:Name="FireExtinguish" HorizontalOptions="EndAndExpand" ></CheckBox>
+
+                                    </StackLayout>
+
+
+                                </ViewCell>
+                            </TableSection>
+
+                            <TableSection >
+                                <ViewCell>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Image Source="blackboard1"  ></Image>
+                                        <Label  Text="Board" TextColor="#223A66" VerticalTextAlignment="Center"></Label>
+                                        <!--<Frame CornerRadius="100" HorizontalOptions="Center" VerticalOptions="Center" BorderColor="#C17FFB" BackgroundColor="Transparent">
+                                               
+                                            </Frame>-->
+                                        <CheckBox  x:Name="fullDay"  HorizontalOptions="EndAndExpand"></CheckBox>
+
+                                    </StackLayout>
+
+
+                                </ViewCell>
+                            </TableSection>
+
+                            <TableSection >
+                                <ViewCell>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Image Source="clean1"  ></Image>
+                                        <Label  Text="Cleaning" TextColor="#223A66" VerticalTextAlignment="Center"></Label>
+                                        <!--<Frame CornerRadius="100" HorizontalOptions="Center" VerticalOptions="Center" BorderColor="#C17FFB" BackgroundColor="Transparent">
+                                               
+                                            </Frame>-->
+                                        <CheckBox  x:Name="Clean"  HorizontalOptions="EndAndExpand"></CheckBox>
+
+                                    </StackLayout>
+
+
+                                </ViewCell>
+                            </TableSection>
+
+                            <TableSection >
+                                <ViewCell>
+                                    <StackLayout Orientation="Horizontal">
+                                        <!--<Frame CornerRadius="100" HorizontalOptions="Center" VerticalOptions="Center" BorderColor="#C17FFB" BackgroundColor="Transparent">
+                                               
+                                            </Frame>-->
+                                        <Image Source="other1"  ></Image>
+                                        <Label  Text="Other" TextColor="#223A66" VerticalTextAlignment="Center"></Label>
+                                        <CheckBox  x:Name="other"  HorizontalOptions="EndAndExpand"></CheckBox>
+
+                                    </StackLayout>
+
+
+                                </ViewCell>
+                            </TableSection>
+
+                        </TableRoot>
+                    </TableView>
+
+
+
+                </StackLayout>
+                <StackLayout>
+
+                    <Frame Padding="0" BorderColor="#012623"  HeightRequest="108" WidthRequest="287" CornerRadius="15" BackgroundColor="#A8BFA4" Margin="20">
+                        <StackLayout Orientation="Vertical" Margin="10" >
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="comment1" HeightRequest="25"  HorizontalOptions="Start"  VerticalOptions="CenterAndExpand"></Image>
+                                <Label Text="Query Box" FontSize="Medium" TextColor="#012623" FontFamily="Montserrat"></Label>
+
+                            </StackLayout>
+                            <Entry Placeholder="Comment Box"  PlaceholderColor="#012623" HorizontalOptions="Start" ></Entry>
+                        </StackLayout>
+
+
+
+                    </Frame>
+
+                </StackLayout>
+
+                <Button Text="Submit" TextTransform="None" Clicked="CQSubmit" TextColor="White" Margin="90,20,90,20" HeightRequest="50" WidthRequest="136" CornerRadius="15" BackgroundColor="#3A7338" FontAttributes="Bold"  FontSize="18">
+
+                </Button>
+
+
+
+
+            </StackLayout>
+
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="rm.UserSignIn"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout >
+                <StackLayout Orientation="Horizontal">
+                    <ImageButton Source="Vector" Clicked="SignInBack" WidthRequest="25" VerticalOptions="CenterAndExpand" BackgroundColor="Transparent"></ImageButton>
+                    <Label  Text="Sign In" FontSize="26" FontAttributes="Bold" TextColor="#012623" FontFamily="Montserrat" HorizontalOptions="CenterAndExpand" Margin="0,30,10,0" ></Label>
+                </StackLayout>
+                
+                <Label Text="Fill your details" FontSize="24" FontFamily="Montserrat" TextColor="#012623" FontAttributes="None" Margin="40,30,0,0">
+
+                </Label>
+                <Frame BackgroundColor="#D3DED1" BorderColor="#012623" Padding="0" CornerRadius="11" Margin="40,20,40,10" >
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="User"  HeightRequest="20" WidthRequest="20" Margin="20,0,0,0"></Image>
+                        <StackLayout>
+
+                            <Entry Placeholder="Enter Name"  PlaceholderColor="#012623"   FontSize="Medium"></Entry>
+
+
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <Frame BackgroundColor="#D3DED1" BorderColor="#012623" Padding="0" CornerRadius="11" Margin="40,20,40,10">
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="Mail1"  HeightRequest="20" WidthRequest="20" Margin="20,0,0,0"></Image>
+                        <StackLayout>
+
+                            <Entry Placeholder="Enter Email" Keyboard="Email" PlaceholderColor="#012623"  FontSize="Medium"></Entry>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#D3DED1" BorderColor="#012623" Padding="0" CornerRadius="11" Margin="40,20,40,10">
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="id1"  HeightRequest="20" WidthRequest="20" Margin="20,0,0,0"></Image>
+                        <StackLayout>
+
+                            <Entry Placeholder="Enter ID Card No" HorizontalOptions="StartAndExpand" PlaceholderColor="#012623"  FontSize="Medium"></Entry>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#D3DED1" BorderColor="#012623" Padding="0" CornerRadius="11" Margin="40,20,40,10">
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="dep1"  HeightRequest="20" WidthRequest="20" Margin="20,0,0,0"></Image>
+                        <StackLayout>
+
+                            <Entry Placeholder="Enter Department" HorizontalOptions="StartAndExpand" PlaceholderColor="#012623"   FontSize="Medium"></Entry>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#D3DED1" BorderColor="#012623" Padding="0" CornerRadius="11" Margin="40,20,40,10">
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="call1"  HeightRequest="20" WidthRequest="20" Margin="20,0,0,0"></Image>
+                        <StackLayout>
+
+                            <Entry Placeholder="Enter Phone no" HorizontalOptions="StartAndExpand" Keyboard="Numeric" PlaceholderColor="#012623" FontSize="Medium"></Entry>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <Frame BackgroundColor="#D3DED1" BorderColor="#012623" Padding="0" CornerRadius="11" Margin="40,20,40,10">
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="password1"  HeightRequest="20" WidthRequest="20" Margin="20,0,0,0"></Image>
+                        <StackLayout>
+
+                            <Entry Placeholder="Password" Keyboard="Default"   PlaceholderColor="#012623"  FontSize="Medium"></Entry>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#D3DED1" BorderColor="#012623" Padding="0" CornerRadius="11" Margin="40,20,40,10">
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="password1"  HeightRequest="20" WidthRequest="20" Margin="20,0,0,0"></Image>
+                        <StackLayout>
+
+                            <Entry Placeholder="Confirm Password" Keyboard="Default" PlaceholderColor="#012623"   FontSize="Medium"></Entry>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <StackLayout>
+                    <Label Text="Upload profile picture" TextColor="#012623" FontSize="22" FontFamily="Montserrat" FontAttributes="None" Margin="40,20,0,0"></Label>
+
+                    <Frame BackgroundColor="#D3DED1" BorderColor="#012623" HeightRequest="150" Padding="0" CornerRadius="28"  Margin="40,20,40,0">
+                        <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand">
+                            <ImageButton Source="Upload"  CornerRadius="100" Margin="138,0,138,0"></ImageButton>
+                            <Label Text="Upload From Gallery" FontSize="18" TextColor="Gray" HorizontalOptions="CenterAndExpand"></Label>
+                        </StackLayout>
+
+                    </Frame>
+
+                    <StackLayout Margin="0,0,0,60">
+                        <Button Text="Sign In" Clicked="signin" FontSize="18" BackgroundColor="#3A7338" TextTransform="None" TextColor="White" CornerRadius="10" Margin="130,50,130,0" ></Button>
+                    </StackLayout>
+
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

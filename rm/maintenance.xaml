@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="rm.maintenance"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Image Source="Booking_Big" Aspect="AspectFill" VerticalOptions="FillAndExpand">
+
+                </Image>
+                <StackLayout Orientation="Horizontal" Margin="20" VerticalOptions="Start" BackgroundColor="Transparent">
+                    <ImageButton Source="Vector" Clicked="MainBack" WidthRequest="25" VerticalOptions="CenterAndExpand" BackgroundColor="Transparent"></ImageButton>
+                    <Label Text="Maintenance" FontAttributes="Bold" FontSize="25" Margin="0,0,30,0" FontFamily="Montserrat" BackgroundColor="Transparent" HorizontalOptions="CenterAndExpand" TextColor="#012623" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center" >
+                    </Label>
+                </StackLayout>
+
+            </Grid>
+            <StackLayout Orientation="Horizontal" >
+                <ImageButton  Source="lab" Clicked="LabMain"  BackgroundColor="Transparent" HeightRequest="104" WidthRequest="96" Margin="50,0,30,0">
+
+                </ImageButton>
+                <ImageButton Source="classroom" Clicked="ClassMain" BackgroundColor="Transparent" HeightRequest="104" WidthRequest="96" Margin="30"></ImageButton>
+
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" >
+                <ImageButton Source="Sanitization" Clicked="SantiMain" BackgroundColor="Transparent" HeightRequest="104" WidthRequest="96" Margin="50,0,30,0">
+
+                </ImageButton>
+                <ImageButton Source="Water" Clicked="WaterMain"  BackgroundColor="Transparent"  HeightRequest="136" WidthRequest="70" Margin="30"></ImageButton>
+
+            </StackLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

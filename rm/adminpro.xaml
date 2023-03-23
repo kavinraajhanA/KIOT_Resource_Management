@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="rm.adminpro"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#D3DED1">
+            <StackLayout Orientation="Horizontal">
+                <ImageButton  Source="Vector" Clicked="backadmin" WidthRequest="25" VerticalOptions="Center" Margin="20,20,0,0" BackgroundColor="Transparent"></ImageButton>
+                <Label Text="Profile" TextColor="#012623" FontAttributes="Bold"  FontSize="26" HorizontalOptions="CenterAndExpand" FontFamily="Montserrat" Margin="0,20,50,0"/>
+            </StackLayout>
+            <ScrollView>
+                <StackLayout>
+                    <Image Source="profile" Margin="20" HeightRequest="80" ></Image>
+
+
+
+
+                    <!--faculty-->
+                    <Frame CornerRadius="15" Padding="15" BorderColor="#012623" BackgroundColor="#F1F1F1" Margin="20,10,20,0" WidthRequest="311" HeightRequest="40">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="Faculty_Clicked"></TapGestureRecognizer>
+                        </Frame.GestureRecognizers>
+                        <StackLayout Orientation="Horizontal" >
+                            <Image Source="Group" HorizontalOptions="Start" HeightRequest="30"></Image>
+                            <StackLayout Orientation="Vertical" HorizontalOptions="Start" Margin="20,0,0,0">
+                                <Label Text="Faculty" TextColor="#012623" FontSize="16" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" FontFamily="Montserrat"></Label>
+                            </StackLayout>
+                            <Image Source="view" HorizontalOptions="EndAndExpand"  WidthRequest="40" IsVisible="true"></Image>
+                            <Image Source="tick"  HorizontalOptions="EndAndExpand" HeightRequest="30" IsVisible="false"></Image>
+                        </StackLayout>
+                    </Frame>
+
+                    <!--add lab-->
+                    <Frame CornerRadius="15" Padding="15" BorderColor="#012623" BackgroundColor="#F1F1F1" Margin="20,10,20,0" WidthRequest="311" HeightRequest="40">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="Addlab_Clicked"></TapGestureRecognizer>
+                        </Frame.GestureRecognizers>
+                        <StackLayout Orientation="Horizontal"  >
+                            <Image Source="addlab1" HorizontalOptions="Start" HeightRequest="30"></Image>
+                            <StackLayout Orientation="Vertical" HorizontalOptions="Start" Margin="20,0,0,0">
+                                <Label Text="Add Lab" TextColor="#012623" FontSize="16" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" FontFamily="Montserrat"></Label>
+
+                            </StackLayout>
+                            <Image Source="view" HorizontalOptions="EndAndExpand"  WidthRequest="40" HeightRequest="12" IsVisible="true"></Image>
+                            <Image Source="tick"  HorizontalOptions="EndAndExpand" HeightRequest="30" IsVisible="false"></Image>
+                        </StackLayout>
+                    </Frame>
+
+
+
+
+
+                    <!--Password-->
+                    <Frame CornerRadius="15" Padding="15" BorderColor="#012623" BackgroundColor="#F1F1F1" Margin="20,10,20,0" WidthRequest="311" HeightRequest="40">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="Password_clicked"></TapGestureRecognizer>
+                        </Frame.GestureRecognizers>
+                        <StackLayout Orientation="Horizontal"  >
+                            <Image Source="password1" HorizontalOptions="Start" HeightRequest="30"></Image>
+                            <StackLayout Orientation="Vertical" HorizontalOptions="Start" Margin="20,0,0,0">
+                                <Label Text="Password" TextColor="#012623" FontSize="16" HorizontalOptions="StartAndExpand" FontFamily="Montserrat"></Label>
+                                <Label Text="xxxxxxxxxx"></Label>
+                                <Entry></Entry>
+                            </StackLayout>
+                            <Image Source="change" HorizontalOptions="EndAndExpand"  WidthRequest="55" IsVisible="true"></Image>
+                            <Image Source="tick"  HorizontalOptions="EndAndExpand" HeightRequest="30" IsVisible="false"></Image>
+                        </StackLayout>
+                    </Frame>
+                    <!--Logout-->
+                    <Frame  CornerRadius="15" Padding="15" BorderColor="#012623" BackgroundColor="#F1F1F1" Margin="20,10,20,10" WidthRequest="311" HeightRequest="40">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="LogOut"></TapGestureRecognizer>
+                        </Frame.GestureRecognizers>
+                        <StackLayout Orientation="Horizontal"  >
+                            <Image Source="exit1" HorizontalOptions="Start" HeightRequest="30"></Image>
+                            <StackLayout Orientation="Vertical" HorizontalOptions="Start" Margin="20,0,0,0">
+                                <Label Text="Logout" TextColor="#012623" FontSize="16" HorizontalOptions="StartAndExpand" FontFamily="Montserrat" VerticalOptions="CenterAndExpand"></Label>
+                            </StackLayout>
+
+                        </StackLayout>
+                    </Frame>
+
+
+
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

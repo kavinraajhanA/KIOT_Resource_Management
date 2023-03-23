@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="rm.Labnot">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="labnot"></Image>
+            <Label Text="Oop’s! lab not Available" FontSize="20" TextColor="Gray" HorizontalTextAlignment="Center" FontFamily="Montserrat"></Label>
+            <Frame Margin="30,60,30,60" BackgroundColor="#D3DED1" CornerRadius="15" BorderColor="#012623">
+                <StackLayout>
+                    <StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Image Source="labimage" HorizontalOptions="Start" HeightRequest="70" ></Image>
+                            <StackLayout Orientation="Vertical">
+                                <Label Text="CC01" Margin="10" TextColor="Black" FontSize="16" FontFamily="Montserrat" FontAttributes="Bold"></Label>
+                                <Label Text="Occupies upto 30 system" Margin="10,0,0,10" TextColor="Gray" FontSize="15"  ></Label>
+                            </StackLayout>
+                        </StackLayout>
+                        <Label Text=" - - -  - - -  - - -  - - -  - - -  - - -  - - - " Padding="5" HorizontalOptions="Center" TextColor="#2C626B" FontSize="Large"></Label>
+
+                    </StackLayout>
+                    <StackLayout>
+                        <Label Text="Department" TextColor="Black" FontSize="18"   FontAttributes="bold" FontFamily="Montserrat" HorizontalTextAlignment="start"></Label>
+                        <Label Text="Cse" TextColor="Gray" FontSize="14"    FontFamily="Montserrat" HorizontalTextAlignment="start"></Label>
+                        
+                        <StackLayout Orientation="Horizontal">
+                            <StackLayout >
+                                <Label Text="Date" TextColor="Black" FontSize="18"   FontAttributes="bold" FontFamily="Montserrat" HorizontalTextAlignment="start"></Label>
+                                <Label Text="01/02/2023" TextColor="Gray" FontSize="14"    FontFamily="Montserrat" HorizontalTextAlignment="start"></Label>
+                            </StackLayout>
+                            <StackLayout Margin="45,0,0,0">
+                                <Label Text="From" TextColor="Black" FontSize="18"   FontAttributes="bold" FontFamily="Montserrat" HorizontalTextAlignment="start"></Label>
+                                <Label Text="2.00pm" TextColor="Gray" FontSize="14"    FontFamily="Montserrat" HorizontalTextAlignment="start"></Label>
+                            </StackLayout>
+
+                            <StackLayout  HorizontalOptions="EndAndExpand">
+                                <Label Text="Till" TextColor="Black" FontSize="18"   FontAttributes="bold" FontFamily="Montserrat" ></Label>
+                                <Label Text="4.00pm" TextColor="Gray"  FontSize="14"    FontFamily="Montserrat" ></Label>
+                            </StackLayout>
+                           
+
+                        </StackLayout>
+
+                    </StackLayout>
+
+                    <StackLayout HeightRequest="110">
+                        <Frame Padding="0" BackgroundColor="#2C626B" CornerRadius="5"  >
+                            <StackLayout  >
+                                <Label Text="Available after time"  VerticalOptions="Center" HorizontalOptions="Center"  FontSize="16" TextColor="White"></Label>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+
+
+              </StackLayout>
+                
+
+            </Frame>
+          
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

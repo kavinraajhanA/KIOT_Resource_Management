@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="rm.Adminmain" NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#D3DED1">
+            <StackLayout Orientation="Horizontal">
+                <StackLayout >
+                    <ImageButton Clicked="adminpro" Source="profile" Margin="30" HeightRequest="80" HorizontalOptions="Start" ></ImageButton>
+
+                </StackLayout>
+                <StackLayout Orientation="Vertical"  Margin="0,35,5,0">
+                    <Label Text="Name" FontSize="20" FontAttributes="Bold"  FontFamily="Montserrat"   TextColor="Black"></Label>
+                    <Label Text="Department" FontSize="14"  FontFamily="Montserrat"   TextColor="Black"></Label>
+                </StackLayout>
+                <StackLayout Margin="130,50,0,0" >
+                    <ImageButton Source="bell1"   BackgroundColor="Transparent" HeightRequest="30" ></ImageButton>
+                </StackLayout>
+            </StackLayout>
+            <ScrollView>
+                <StackLayout >
+
+                    <ImageButton Source="booking" Clicked="AdminHL"  Margin="0,20,0,0"  BackgroundColor="Transparent" HeightRequest="120" ></ImageButton>
+                    <ImageButton Source="maintenance" Clicked="adminMain" Margin="0,40,0,0"  BackgroundColor="Transparent" HeightRequest="120"></ImageButton>
+                    <ImageButton Source="Status" Margin="0,40,0,0" Clicked="adminstatus"  BackgroundColor="Transparent" HeightRequest="120"></ImageButton>
+                    <ImageButton Source="StaffRequest" Clicked="Staffreq" Margin="0,40,0,0"  BackgroundColor="Transparent" HeightRequest="120"></ImageButton>
+                    <ImageButton Source="hallandlab" Clicked="view_halls_labs"  Margin="0,20,0,0"  BackgroundColor="Transparent" HeightRequest="120" ></ImageButton>
+
+
+                </StackLayout>
+            </ScrollView>
+           
+           
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

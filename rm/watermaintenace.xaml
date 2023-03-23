@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="rm.watermaintenace"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+
+        <StackLayout BackgroundColor="#D3DED1">
+            <StackLayout Orientation="Horizontal">
+                <ImageButton Source="Vector" Clicked="WMBack" BackgroundColor="Transparent" Margin="30"  HeightRequest="25" ></ImageButton>
+                <Label Text="Water" TextColor="Black" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" Margin="0,25,70,0" FontFamily="Montserrat"  HorizontalOptions="CenterAndExpand"></Label>
+            </StackLayout>
+            <Frame Margin="30,20,30,60" Padding="9" CornerRadius="15" BorderColor="#012623">
+                <StackLayout>
+                    <StackLayout>
+                        <StackLayout Orientation="Horizontal">
+
+                            <StackLayout Orientation="Vertical">
+                                <Label Text="Staff Name" Margin="10" TextColor="Black" FontSize="16" FontFamily="Montserrat" FontAttributes="Bold"></Label>
+                                <Label Text="Department" Margin="10,0,0,10" TextColor="Gray" FontSize="15"  ></Label>
+                            </StackLayout>
+                            <Image Source="sucess" HorizontalOptions="EndAndExpand" HeightRequest="50" ></Image>
+                        </StackLayout>
+                        <Label Text=" - - -  - - -  - - -  - - -  - - -  - - -  - - - " Padding="5" HorizontalOptions="Center" TextColor="Gray" FontSize="Large"></Label>
+
+                    </StackLayout>
+                    <StackLayout Margin="0,0,0,20">
+                        <StackLayout>
+                            <StackLayout Orientation="Horizontal">
+                                <StackLayout>
+                                    <Label Text="Block" TextColor="Black" FontSize="18"   FontAttributes="bold" FontFamily="Montserrat" HorizontalTextAlignment="start"></Label>
+                                    <Label Text="A" TextColor="Gray" FontSize="14"    FontFamily="Montserrat" HorizontalTextAlignment="start"></Label>
+                                </StackLayout>
+
+                                <StackLayout HorizontalOptions="EndAndExpand">
+                                    <Label Text="Floor" TextColor="Black" FontSize="18"   FontAttributes="bold" FontFamily="Montserrat" ></Label>
+                                    <Label Text="2" TextColor="Gray"  FontSize="14"    FontFamily="Montserrat" ></Label>
+                                </StackLayout>
+
+
+                            </StackLayout>
+
+
+                            <StackLayout Orientation="Vertical">
+                                <Label Text="Comment Box" TextColor="Black" FontSize="18" FontAttributes="Bold" FontFamily="Montserrat"  ></Label>
+                                <Label Text="Workshop Event based on Full Stack Mobile Application is going to happen for the first time in KIOT." TextColor="Gray"  FontSize="14"    FontFamily="Montserrat" ></Label>
+
+                            </StackLayout>
+
+                            <StackLayout>
+                                <Button TextTransform="None" Text="Resolved" BackgroundColor="#3A7338" TextColor="White" Margin="190,0,0,0" FontSize="18" CornerRadius="10"></Button>
+                            </StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+
+                </StackLayout>
+
+
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

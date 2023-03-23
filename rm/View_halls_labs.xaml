@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="rm.View_halls_labs" NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Image Source="booking_maintenance">
+
+                </Image>
+                <StackLayout Orientation="Horizontal" Margin="20" VerticalOptions="Start" BackgroundColor="Transparent">
+                    <ImageButton Source="Vector" Clicked="adminHLback" WidthRequest="25" VerticalOptions="CenterAndExpand" BackgroundColor="Transparent"></ImageButton>
+                    <Label Text="Booking" FontAttributes="Bold" FontSize="25" Margin="0,0,30,0" FontFamily="Montserrat" BackgroundColor="Transparent" HorizontalOptions="CenterAndExpand" TextColor="#012623" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center" >
+                    </Label>
+                </StackLayout>
+
+            </Grid>
+            <StackLayout Orientation="Horizontal" >
+                <ImageButton Source="Hall_Booking" Clicked="ViewHall"  BackgroundColor="Transparent" HeightRequest="104" WidthRequest="96" Margin="50,50,30,0">
+
+                </ImageButton>
+                <ImageButton Source="Lab_Booking" Clicked="ViewLab" BackgroundColor="Transparent" HeightRequest="104" WidthRequest="96" Margin="30,50,0,0"></ImageButton>
+
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
